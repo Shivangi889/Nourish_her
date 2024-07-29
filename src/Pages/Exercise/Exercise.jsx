@@ -21,7 +21,7 @@ const Exercise = ({
 
   const getVideoDetails = async (id) => {
     try {
-      const res = await axios.get(`http://localhost:8080/exercise/${id}`);
+      const res = await axios.get(`https://nourish-backend.onrender.com/exercise/${id}`);
       return res.data;
     } catch (error) {
       console.log("Error fetching video details:", error);
@@ -31,7 +31,7 @@ const Exercise = ({
 
   const getNextVideo = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/exercise`);
+      const res = await axios.get(`https://nourish-backend.onrender.com/exercise`);
       return res.data;
     } catch (error) {
       console.log("Error fetching next videos:", error);

@@ -32,7 +32,7 @@ const Login = () => {
                 return;
             }
     
-            const response = await axios.post('http://localhost:8080/login', {
+            const response = await axios.post('https://nourish-backend.onrender.com/login', {
                 email: email,
                 password: password
             });

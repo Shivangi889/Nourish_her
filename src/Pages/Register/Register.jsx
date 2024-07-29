@@ -44,7 +44,7 @@ const Register = () => {
                 return;
             }
 
-            const response = await axios.post('http://localhost:8080/register', {
+            const response = await axios.post('https://nourish-backend.onrender.com/register', {
                 name,
                 email,
                 password,
